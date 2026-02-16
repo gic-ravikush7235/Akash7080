@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Akash | Artist Portfolio</title>
+  <link rel="stylesheet" href="aka.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>Akash</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+ <section id="home">
+
+  <video autoplay muted loop class="bg-video">
+    <source src="Untitled design (1).mp4" type="video/mp4">
+  </video>
+  <img src="aki.png" class="profile">
+<div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap; justify-content: center;">
+    <h1 id="Hi">Hi, <span   style="font-size: xx-large;  color: #d42411;  " >i'm </span><span class="highlight">Ꭺᴋᴀ֟፝ꜱʜ</span></h1>
+  </div>
+  <p>Class 12th | Drawing Artist</p>
+  
+</section>
+ 
+
+
+<!-- ABOUT -->
+<section id="about" class="container">
+  <h2>About Me</h2>
+  </section>
+  <hr>
+  <div id="bg">
+  <img id="photo" src="sn.png" alt="akash">
+    <h3>亗🅐🅚🅐🅢🅗亗</h3>
+  <p>
+    I am Akash, currently studying in Class 12th.
+    Along with my academic journey, I have developed a strong passion for drawing and creative art.
+
+    I started drawing at an early age and continuously worked on improving my skills through regular practice and self-learning. Over time, I have explored different art styles and techniques, which helped me grow as an artist.
+
+    I believe in learning something new every day and using my creativity to express ideas through art. I am now looking for opportunities where I can enhance my skills, gain professional experience, and contribute creatively.
+  </p>
+  </div>
+<hr>
+
+<!-- SKILLS -->
+<section id="skills" class="container">
+  <h2>Skills</h2>
+<hr>
+  <div class="skills-box">
+    <span>Drawing   </span>
+    <span>Sketching   </span>
+    <span>Creative Art  </span>
+    <span>Pencil Art</span>
+  </div>
+ <div class="slider">
+  <img src="_ (12).jpeg" class="slide active">
+  <img src="_ (13).jpeg" class="slide">
+  <img src="Banksy-style Mural - Wall Art - Painting - Street Art on War and Love - Digital Art - Etsy.jpeg" class="slide">
+  <img src="Digitally Remastered Mona Lisa Art Print - Classic Renaissance Poster, Fine Art Reproduction, Vintage Wall Decor, Iconic Portrait Artwork.jpeg" class="slide">
+
+  <span class="prev">&#10094;</span>
+  <span class="next">&#10095;</span>
+ 
+</div>
+ <div class="dots">
+    <span class="dot" onclick="showSlide(0)"></span>
+    <span class="dot" onclick="showSlide(1)"></span>
+    <span class="dot" onclick="showSlide(2)"></span>
+    <span class="dot" onclick="showSlide(3)"></span>
+  </div>
+
+</section>
+<br>
+
+<!-- PORTFOLIO -->
+<section id="work " class="container">
+  <h2>My Artwork</h2>
+ <hr>
+  <div class="gallery">
+    <img src="_ (4).jpeg">
+    <img src="Pinterest.jpeg">
+    <img src="How To Draw Step By Step Easy.jpeg">
+    <img src="_ (6).jpeg">
+    <img src="_ (7).jpeg">
+    <img src="_ (8).jpeg" >
+  </div>
+</section> 
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+  
+<h2>Contact Me</h2>
+<hr>
+<div class="contact-icons">
+    <a href="https://wa.me/7989934240"><img src="whtap.png"></a>
+    <a href="mailto:akashkush7070 @gmail.com"><img src="gail.png"></a>
+    <a href="tel:+917080934240"><img src="call.png"></a>
+  </div>
+</section>
+
+
+<div class="sidebar">
+  <a href="https://wa.me/7080934240" target="_blank">
+    <img src="whtap.png">
+  </a>
+  <a href="mailto:akash@gmail.com">
+    <img src="gail.png">
+  </a>
+  <a href="tel:+917080934240">
+    <img src="call.png">
+  </a>
+</div>
+<footer>
+  <div>Created by ravi</div>
+</footer>
+  
+
+
+</body>
+</html>
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide(i){
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+function nextSlide(){
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+function prevSlide(){
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+}
+
+document.querySelector(".next").onclick = nextSlide;
+document.querySelector(".prev").onclick = prevSlide;
+
+setInterval(nextSlide, 3000);
+</script>
+
+
+<script>alert("Welcome to Akash' bhai");</script>

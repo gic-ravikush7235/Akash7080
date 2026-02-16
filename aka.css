@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #9e9d8c;
+  
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #030510cb;
+  position: sticky;
+  top: 0;  
+}
+.navbar h2 {
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a  {
+  color: white;
+  text-decoration: none;
+}
+ 
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* HOME */
+#home{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+/* #home {
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  background-image: url("Futuristic\ sci-fi\ background_\ Blue\ circle\ portal\ with\ light\ flares\ and\ sparkles.jpeg") ;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-position: center; 
+} */
+#Hi {
+  font-size: 60px;
+  margin-top: 20px;
+  color: #e5eaec;
+}
+#home .highlight {
+  color: #fa3306;
+  font-size: 35px;
+  
+}
+#home h1 {
+  font-size: 86px;
+  margin-top: 40px;
+}
+
+#home p {
+  font-size: 20px;
+  color: #e7e8ea;
+}
+
+.navbar h2 {
+  font-size: 24px;
+}
+
+.profile {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skills-box span {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #838486;
+  border-radius: 20px;
+}
+.skills-box img {
+  width: 30px;
+  margin-left: 10px;
+  
+}
+
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: rgb(211, 209, 211);
+  height: auto;
+}
+
+.gallery img {
+  width: 220px;
+  border-radius: 20px;
+  transition: 0.4s;
+  padding: 10px;
+  }
+
+.gallery img:hover {
+  transform: translateY(-10px) scale(1.1);
+}
+
+/* CONTACT */
+.contact-icons img {
+  width: 35px;
+  margin: 15px;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.2)
+}
+#contact {
+  background-color: rgb(255, 214, 65);
+}
+/* ABOUT */
+#bg p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #e5eaec;
+
+}
+#bg img {
+  width: 200px;
+  border-radius: 100px;
+  margin-left: 40%;
+  margin-right: 10%;
+  border: gray solid 10px;
+}
+#bg h3 {
+  font-size: 34px;
+  margin : 20px;
+  margin-left: 40%;
+  margin-right: 10%;
+  color: rgb(245, 242, 246);
+}
+.container {
+    padding: 50px;
+    text-align: center;
+    font-size: 50px;
+    /* color: rgb(156, 167, 167); */
+    text-decoration: underlines black;
+}
+#bg {
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+  padding: 50px;
+  margin-top: 20px;
+  /* background-color: rgb(156, 148, 156); */
+  background-image: url(_\ \(9\).jpeg);
+  /* padding: 20px; */
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  /* width: 95%; */
+  height: auto;
+  /* transition: 0.4s;s */
+}
+#work {
+  background-color: rgb(156, 148, 156);
+}
+.sidebar {
+  position: fixed;
+  left: 10px;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar img {
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+.sidebar img:hover {
+  transform: scale(1.2);
+}
+footer{
+    background-color:black;
+    text-align: center;
+    color: wheat;
+    padding: 25px 20px;
+    height: 50px;
+}
+
+/* // slider// */
+.slider{
+  width: 1000px;        /* यहाँ size कम-ज्यादा कर सकते हो */
+  height: 600px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 5%;
+  /* border: #717171 solid 10px; */
+}
+
+.slide {
+  position: absolute; /* ताकि इमेज एक के ऊपर एक रहें */
+  top: 0;
+  left: 0;
+  width: 100%;       /* 20% बहुत छोटा है, इसे 100% करो */
+  height: 100%;      /* इसे भी 100% करो */
+  object-fit: cover; /* इमेज पूरे बॉक्स में फिट आएगी */
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.slide.active{
+  opacity: 1;
+}
+
+.prev, .next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: rgb(240, 236, 236);
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev{ left: 10px; }
+.next{ right: 10px; }
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}

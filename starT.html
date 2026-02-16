@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+    }
+
+    /* Background Video */
+    .bg-video{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Glass Box */
+    .content{
+      text-align: center;
+      padding: 50px 80px;
+      border-radius: 15px;
+      backdrop-filter: blur(15px);
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    h1{
+      font-size: 40px;
+      margin-bottom: 20px;
+      min-height: 50px;
+    }
+
+    .btn{
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 18px;
+      background: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover{
+      background: #ff3300;
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="nony.mp4" type="video/mp4">
+  </video>
+
+  <!-- Glass Content -->
+  <div class="content">
+    <h1 id="typing"></h1>
+    <a href="ravi.html" class="btn">Visit Site</a>
+  </div>
+
+  <script>
+    // Typing Effect
+    const text = "Welcome To akash's Portfolio";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 70);
+      }
+    }
+    typeWriter();
+
+    // Auto Redirect After 5 Seconds
+  //   setTimeout(() => {
+  //     window.location.href = "ravi.html";
+  //   }, 5000);
+  // </script>
+
+</body>
+</html>
+ 
